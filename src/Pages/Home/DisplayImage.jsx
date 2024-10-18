@@ -33,11 +33,14 @@ const DisplayPage = ({ searchQuery }) => {
         )}
       </div>
 
-      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-2">
+      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4">
         {loading ? (
           // Use filteredItems.length to determine the number of skeletons
           Array.from(
-            { length: filteredItems.length > 0 ? filteredItems.length : 10 },
+            {
+              length:
+                filteredItems.length > 0 ? filteredItems.length : items.length,
+            },
             (_, index) => <SkeletonCard key={index} />
           )
         ) : filteredItems.length > 0 ? (

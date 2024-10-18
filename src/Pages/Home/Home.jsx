@@ -31,7 +31,7 @@ const Home = () => {
         <LatestRecipes />
         <NewsLetter />
         <AboutSection />
-        <CompanyLogo />
+        {/* <CompanyLogo /> */}
       </section>
     </div>
   );

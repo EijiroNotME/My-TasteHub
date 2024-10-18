@@ -42,7 +42,7 @@ const MobileNav = ({ menuItems, Logo, onOpen, onClose, hideLeft }) => {
             ))}
           </ul>
 
-          <ul className="flex flex-row items-center gap-4 font-medium mt-10">
+          {/* <ul className="flex flex-row items-center gap-4 font-medium mt-10">
             <li key="login">
               <button className="text-secondary px-4 py-2 rounded border border-secondary w-28">
                 Log In
@@ -53,7 +53,7 @@ const MobileNav = ({ menuItems, Logo, onOpen, onClose, hideLeft }) => {
                 Sign Up
               </button>
             </li>
-          </ul>
+          </ul> */}
         </div>
       </div>
     </nav>
