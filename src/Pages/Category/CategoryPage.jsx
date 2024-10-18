@@ -19,7 +19,7 @@ const CategoryPage = () => {
       </h1>
       <CategoryWrapper />
 
-      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-2">
+      <div className="flex flex-row gap-4 mt-4">
         {filteredItems.map((item) => (
           <Card key={item._id} item={item} />
         ))}

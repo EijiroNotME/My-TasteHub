@@ -2,7 +2,7 @@ import React from "react";
 
 const SkeletonCard = () => {
   return (
-    <div className="relative h-96 w-80 sm:w-72 md:w-60 xl:w-80 flex flex-col justify-between bg-gray-200 shadow-lg rounded-lg overflow-hidden m-4 animate-pulse">
+    <div className="relative h-96 w-[19rem] flex flex-col justify-between bg-gray-200 shadow-lg rounded-lg overflow-hidden animate-pulse">
       <div className="absolute top-2 right-2 px-4 py-2 bg-gray-300 rounded-md w-24 h-8"></div>
       <div className="w-full h-48 bg-gray-300"></div>
       <div className="px-6 py-4 flex-grow">

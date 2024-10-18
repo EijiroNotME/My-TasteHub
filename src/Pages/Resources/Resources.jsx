@@ -18,10 +18,10 @@ const Resources = () => {
         Resources
       </h1>
       <h2 className="text-2xl font-bold text-secondary/90">Articles</h2>
-      <p className="text-xl opacity-80 mb-4">
+      <p className="text-xl opacity-80 mb-4 mx-4 text-center md:text-left">
         Here are some resources that can help you in your journey.
       </p>
-      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-2">
+      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4">
         {loading
           ? // Use a placeholder skeleton for each article card
             Array.from({ length: 4 }, (_, index) => (
@@ -31,7 +31,7 @@ const Resources = () => {
             blogData.map((item, index) => (
               <div
                 key={index}
-                className="relative h-96 flex flex-col justify-between bg-primary shadow-lg shadow-secondary/30 rounded-lg overflow-hidden m-4 cursor-pointer"
+                className="relative h-96 w-[19rem] flex flex-col justify-between bg-primary shadow-lg shadow-secondary/30 rounded-lg overflow-hidden cursor-pointer"
               >
                 <img
                   src={item.imgSrc}
